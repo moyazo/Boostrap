@@ -3,6 +3,13 @@
     src: url(../tipografia/GODOFWAR.TTF);
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 #inicio{
     background: black;
 }
@@ -12,6 +19,8 @@
 
 #img-background{
     background: black;
+    width: 100vw;
+    height: 100%;
 }
 
 #titulo{
@@ -23,11 +32,41 @@
 .title{
     font-family: gow;
     -webkit-text-stroke: .3px rgb(248, 195, 5);
-    animation: textShadow 6s linear infinite  ;
+    animation: textShadow 4.5s linear infinite  ;
     
 }
 
+#center{
+    margin-left: 10%;
+    margin-top: 10%;
+}
 
+a{
+    text-decoration: none;
+    color: white;
+}
+.card-title{
+    color: white;
+}
+.card-text{
+    color: white;
+}
+.card-img-top{
+    color: white;
+}
+
+#1ash{
+animation: ash 2s ease-in;
+}
+
+@keyframes ash {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
 
 @keyframes textShadow {
     0%,25%{
