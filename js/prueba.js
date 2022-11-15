@@ -31,7 +31,10 @@ let aux = 0;
 
 
     function showCard(){
-        document.getElementById()
+       let carta = document.getElementById("carta");
+      let dios = carta.children().getElementById("tarjeta");
+
+      dios.style.visibility = "visible";
     }
 
    

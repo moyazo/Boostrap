@@ -54,6 +54,10 @@ body{
     height: 0;
 }
 
+#tarjeta{
+    visibility: hidden;
+}
+
 .title{
     font-family: gow;
     -webkit-text-stroke: .3px rgb(248, 195, 5);
