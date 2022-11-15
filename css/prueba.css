@@ -8,7 +8,7 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .bgMygrey{
@@ -24,6 +24,7 @@ body{
 
 #inicio{
     background: black;
+    overflow: hidden;
 }
 #navbar{
     background: black;
@@ -47,11 +48,22 @@ body{
     align-items: center;
 }
 
+#dioses{
+    display: flex;
+    flex-direction: column;
+    height: 0;
+}
+
 .title{
     font-family: gow;
     -webkit-text-stroke: .3px rgb(248, 195, 5);
     animation: textShadow 4.5s linear infinite  ;
-    
+}
+
+.title1{
+    font-family: gow;
+    font-size: 3em;
+    -webkit-text-stroke: .3px rgb(248, 195, 5);
 }
 
 
@@ -71,18 +83,55 @@ a{
     color: white;
 }
 
-#1ash{
-animation: ash 2s ease-in;
+#ash{
+animation: ash 15s linear infinite;
+}
+#ash1{
+    animation: ash 10s linear infinite;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes ash {
-    from{
+    /* from{
         opacity: 1;
+        background-position: 100% 0%;
     }
     to{
         opacity: 0;
+        transform: translateY(1000px);
+        background-position: 200% 0%;
+
+    } */
+
+    0%,25%{
+        opacity: 1;
+        background-position: 100% 0%;
+    }
+    25%,50%{
+        opacity: 0;
+        transform: translateY(200px);
+        background-position: 100% 50%;
+    }
+    75%,100%{
+        opacity: 1;
+        transform: translateY(1000px);
+        background-position: 100% 100%;
     }
 }
+
 
 @keyframes textShadow {
     0%,25%{
