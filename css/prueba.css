@@ -54,9 +54,7 @@ body{
     height: 0;
 }
 
-#tarjeta{
-    visibility: hidden;
-}
+
 
 .title{
     font-family: gow;
@@ -66,8 +64,14 @@ body{
 
 .title1{
     font-family: gow;
-    font-size: 3em;
-    -webkit-text-stroke: .3px rgb(248, 195, 5);
+    font-size: 3.5em;
+    /* standard gradient background */
+  background: linear-gradient(rgb(160, 160, 255), rgb(0, 0, 145));
+
+  /* clip informático */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgb(248, 195, 5);
 }
 
 
@@ -94,45 +98,21 @@ animation: ash 15s linear infinite;
     animation: ash 10s linear infinite;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes ash {
-    /* from{
-        opacity: 1;
-        background-position: 100% 0%;
-    }
-    to{
-        opacity: 0;
-        transform: translateY(1000px);
-        background-position: 200% 0%;
-
-    } */
 
     0%,25%{
         opacity: 1;
-        background-position: 100% 0%;
+        
     }
     25%,50%{
         opacity: 0;
         transform: translateY(200px);
-        background-position: 100% 50%;
+        
     }
     75%,100%{
         opacity: 1;
         transform: translateY(1000px);
-        background-position: 100% 100%;
+        
     }
 }
 
