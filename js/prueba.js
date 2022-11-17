@@ -29,11 +29,23 @@
     
 //     },500)
 
+      let dios = document.getElementById("tarjeta");
+      dios.style.visibility = "visible";
+
+      let dios1 = document.getElementById("tarjeta2");
+      dios1.style.visibility = "visible";
+      let dios2 = document.getElementById("tarjeta3");
+      dios2.style.visibility = "visible";
+      let dios3 = document.getElementById("tarjeta4");
+      dios3.style.visibility = "visible";
+      let dios4 = document.getElementById("tarjeta5");
+      dios4.style.visibility = "visible";
       
     function showCard(){
         let dios = document.getElementById("tarjeta");
+        
 
-        dios.style.visibility = "hidden";
+        
         
      if(dios.style.visibility === "hidden"){
         dios.style.visibility = "visible"
@@ -42,6 +54,64 @@
      }
       
     }
+
+    function showCard1(){
+      let dios = document.getElementById("tarjeta2");
+      
+
+      
+      
+   if(dios.style.visibility === "hidden"){
+      dios.style.visibility = "visible"
+   }else if(dios.style.visibility === "visible"){
+      dios.style.visibility = "hidden"
+   }
+    
+  }
+
+  function showCard2(){
+   let dios = document.getElementById("tarjeta3");
+   
+
+   
+   
+if(dios.style.visibility === "hidden"){
+   dios.style.visibility = "visible"
+}else if(dios.style.visibility === "visible"){
+   dios.style.visibility = "hidden"
+}
+ 
+}
+
+function showCard3(){
+   let dios = document.getElementById("tarjeta4");
+   
+
+   
+   
+if(dios.style.visibility === "hidden"){
+   dios.style.visibility = "visible"
+}else if(dios.style.visibility === "visible"){
+   dios.style.visibility = "hidden"
+}
+ 
+}
+
+
+function showCard4(){
+   let dios = document.getElementById("tarjeta5");
+   
+
+   
+   
+if(dios.style.visibility === "hidden"){
+   dios.style.visibility = "visible"
+}else if(dios.style.visibility === "visible"){
+   dios.style.visibility = "hidden"
+}
+ 
+}
+
 
    
 
