@@ -12,10 +12,11 @@
     <title>GOW - RAGNAROK</title>
 </head>
 <body class="align-items-center">
+
+  <!-- NAVBAR -->
     <div id="navbar"class="container-fluid">
         
         <nav  class="navbar navbar-expand-lg navbar-dark">
-            <a href="../index.html"><i class="icon-angle-left"></i></a>
               <div class="container">
                 <a class="navbar-brand" href="#">GOD OF WAR</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -25,35 +26,40 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="./prueba.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                            <a class="nav-link" href="./prueba.html" aria-current="page">HOME</a>  <!-- PLOT.HTML LINK -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./gods.html">Gods</a>
+                            <a class="nav-link active" href="./gods.html">GODS <span class="visually-hidden">(current)</span></a> 
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OPTIONS</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="./weaponsControls.html">WEAPONS</a>
-                                <a class="dropdown-item" href="#">GOD OF WAR RAGNAROK</a>
+                                <a class="dropdown-item" href="./weaponsControls.html">WEAPONS</a> <!-- WEAPONS.HTML LINK -->
+                                <a class="dropdown-item" href="./runicsAttacks.html">RUNIC ATTACKS</a><!-- RUNICATTACKS.HTML LINK -->
                             </div>
                         </li>
                     </ul>
+
+                    <!-- SEARCH FORM -->
+
                     <form class="d-flex my-2 my-lg-0">
                         <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-close-white my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
                         
                     </form>
                 </div>
           </div>
-          <a href="../html/inicio.html"><i class="icon-angle-right"></i></a>
         </nav>
         
     </div>
+
+    <!-- BACKGROUND IMAGE -->
     
     <img src="../img/wallpapersden.com_god-of-war-ragnarok-atreus-and-kratos_1920x1080.jpg" class="img-fluid rounded-top" alt="">
 
+    <!-- GODS SECTION -->
     <div class="container text-center">
-        <div class="row">
+        <div id="grupo1" class="row">
           <div class="col">
             <div id="carta" class="card bg-black hover" onclick="showCard()">
                 <img class="card-img-top" src="" alt="">
@@ -62,7 +68,9 @@
                     <p class="card-text">
                         Kratos is the main protagonist of all the games in the God of War saga. Son of the god Zeus and Callisto, a mortal woman, Kratos was born in Sparta, a Greek city that was characterized as a warrior people.</p>
                 </div>
-                <img id="tarjeta" src="../img/krattos.jpg" class="img-fluid rounded-top" alt="">
+                <div id="imagen">
+                  <img id="tarjeta1" src="../img/krattos.jpg" class="img-fluid rounded-top" alt="">
+                </div>
             </div>
           </div>
           <div class="col">
@@ -73,11 +81,13 @@
                     <p class="card-text">
                         Freya, the Witch of the Forest, is a banished Vanir goddess. Former Vanir leader and former queen of the Valkyries. Odin's ex-wife, Baldur's mother and ex-queen of Asgard. Initially an ally of Kratos and his son Atreus, she becomes their enemy after the murder of her beloved but estranged son.</p>
                 </div>
-                <img id="tarjeta2" src="../img/freya.png" class="img-fluid rounded-top" alt="">
-            </div>
+                  <div id="imagen">
+                    <img id="tarjeta2" src="../img/freya.png" class="img-fluid rounded-top" alt="">
+                  </div>
+              </div>
           </div>
         </div>
-        <div class="row">
+        <div id="grupo2" class="row">
           <div class="col">
             <div id="carta" class="card bg-black hover" onclick="showCard2()">
                 <img class="card-img-top" src="" alt="">
@@ -85,7 +95,9 @@
                     <h4 class="card-title">BALDUR</h4>
                     <p class="card-text">Baldur es un personaje introducido en God of War (2018) como el antagonista principal, presentado en un comienzo como "El desconocido" (esp) o "El extraño" (latam). Baldur es un dios Aesir, hijo de Odín y Freya, y hermano de Thor.</p>
                 </div>
-                <img id="tarjeta3" src="../img/bald.jpg" class="img-fluid rounded-top" alt="">
+                <div id="imagen">
+                  <img id="tarjeta3" src="../img/bald.jpg" class="img-fluid rounded-top" alt="">
+                </div>
             </div>
           </div>
           <div class="col">
@@ -96,7 +108,9 @@
                     <p class="card-text">Odin is considered the main god of Norse mythology and some eternal religions.
                         His role, like that of many Norse gods, is complex. He is the god of wisdom, war and death. But he is also considered, although to a lesser extent, the god of magic, poetry, prophecy, victory and hunting.</p>
                 </div>
-                <img id="tarjeta4" src="../img/odin.jfif" class="img-fluid rounded-top" alt="">
+                <div id="imagen">
+                  <img id="tarjeta4" src="../img/odin.jfif" class="img-fluid rounded-top" alt="">
+                </div>   
             </div>
           </div>
           <div class="col">
@@ -106,7 +120,9 @@
                     <h4 class="card-title">THOR</h4>
                     <p class="card-text">Thor, el legendario Dios del Trueno y campeón de los Aesir, es hijo de Odín y padre de Magni y Modi. Porta un poderoso martillo de mango corto llamado Mjölnir.</p>
                 </div>
-                <img id="tarjeta5" src="../img/thor.jpeg" class="img-fluid rounded-top" alt="">
+                <div id="imagen">
+                  <img id="tarjeta5" src="../img/thor.jpeg" class="img-fluid rounded-top" alt="">
+                </div>
             </div>
           </div>
         </div>
@@ -121,27 +137,27 @@
           <!-- Section: Social media -->
           <section class="mb-4">
             <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
               ><i class="icon-facebook-square"></i
             ></a>
       
             <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
               ><i class="icon-social-twitter"></i
             ></a>
       
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
               ><i class="icon-instagrem"></i
             ></a>
       
             <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
               ><i class="icon-linkedin-square"></i
             ></a>
       
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
               ><i class="icon-social-github"></i
             ></a>
           </section>

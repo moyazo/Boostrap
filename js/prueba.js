@@ -1,119 +1,79 @@
 "use strict"
 
-// let aux = 0;
+// GODS SHOW UP
 
-//     let idTimeInterval = setInterval(() => {
-//         let ceniza = document.createElement("div"); 
+      // let dios1 = document.getElementById("tarjeta1");
+      // let dios2 = document.getElementById("tarjeta2");
+      // let dios3 = document.getElementById("tarjeta3");
+      // let dios4 = document.getElementById("tarjeta4");
+      // let dios5 = document.getElementById("tarjeta5");
 
-//         let ash = Math.random() - 0.5;
-
-//         if(ash > 0){
-//             ceniza.setAttribute("id","ash")
-//         }else{
-//             ceniza.setAttribute("id","ash1")
-//         }
-        
-//         ceniza.style.background = "lightblue";
-//         ceniza.style.position = "absolute";
-//         ceniza.style.top = (Math.random() * 100 )+ "%";
-//         ceniza.style.right = (Math.random() * 100 )+ "%";
-//         ceniza.style.boxShadow = "1px 1px 7px 5px lightblue";
-//         ceniza.style.zIndex = -1;
-//         ceniza.style.opacity = Math.random();
-        
-//         document.body.append(ceniza);
-//            aux++;
-//     console.log(aux)
-//     if(aux === 100)
-//         clearInterval(idTimeInterval);
-    
-//     },500)
-
-      let dios = document.getElementById("tarjeta");
-      dios.style.visibility = "visible";
-
-      let dios1 = document.getElementById("tarjeta2");
-      dios1.style.visibility = "visible";
-      let dios2 = document.getElementById("tarjeta3");
-      dios2.style.visibility = "visible";
-      let dios3 = document.getElementById("tarjeta4");
-      dios3.style.visibility = "visible";
-      let dios4 = document.getElementById("tarjeta5");
-      dios4.style.visibility = "visible";
-      
-    function showCard(){
-        let dios = document.getElementById("tarjeta");
-        
-
-        
-        
-     if(dios.style.visibility === "hidden"){
-        dios.style.visibility = "visible"
-     }else if(dios.style.visibility === "visible"){
-        dios.style.visibility = "hidden"
-     }
-      
-    }
-
-    function showCard1(){
-      let dios = document.getElementById("tarjeta2");
+      // dios1.setAttribute("class","zero");
       
 
+      // dios1.addEventListener("click", () => {
+      //    dios1.removeAttribute("class","notVisible");
+
+           
+      //       if(dios1.getAttribute("class")){
+      //          dios1.setAttribute("class","notVisible");
+      //          aux++;
+      //       }else{
+      //          dios1.setAttribute("class","visible");
+      //          aux--;
+      //       }
+      // }) 
+   
       
-      
-   if(dios.style.visibility === "hidden"){
-      dios.style.visibility = "visible"
-   }else if(dios.style.visibility === "visible"){
-      dios.style.visibility = "hidden"
-   }
-    
-  }
-
-  function showCard2(){
-   let dios = document.getElementById("tarjeta3");
-   
-
-   
-   
-if(dios.style.visibility === "hidden"){
-   dios.style.visibility = "visible"
-}else if(dios.style.visibility === "visible"){
-   dios.style.visibility = "hidden"
-}
- 
-}
-
-function showCard3(){
-   let dios = document.getElementById("tarjeta4");
-   
-
-   
-   
-if(dios.style.visibility === "hidden"){
-   dios.style.visibility = "visible"
-}else if(dios.style.visibility === "visible"){
-   dios.style.visibility = "hidden"
-}
- 
-}
 
 
-function showCard4(){
-   let dios = document.getElementById("tarjeta5");
-   
-
-   
-   
-if(dios.style.visibility === "hidden"){
-   dios.style.visibility = "visible"
-}else if(dios.style.visibility === "visible"){
-   dios.style.visibility = "hidden"
-}
- 
-}
 
 
+
+//  MOSTRAR ATAQUES RÚNICOS 
    
 
 
 
+
+window.addEventListener("keydown", (e) => {
+
+   const btnL2 = document.getElementById("L2")
+   const btnl2 = document.getElementById("l2")
+   const btnR2 = document.getElementById("R2")
+   const btnR1 = document.getElementById("R1")
+
+      btnL2.setAttribute("class","displayNone");
+      btnl2.setAttribute("class","displayNone");
+      btnR2.setAttribute("class","displayNone");
+      btnR1.setAttribute("class","displayNone");
+
+      const keyCode1 =  [49,97];
+      const keyCode2 =  [50,98];
+      const keyCode0 =  [48,96];
+
+      // console.log(e.keyCode);
+      if(e.keyCode === keyCode1[0] || e.keyCode === keyCode1[1]){
+         btnL2.removeAttribute("class");
+         btnR2.removeAttribute("class");
+         btnR2.setAttribute("class","displayFlex");
+         btnL2.setAttribute("class","displayFlex");
+      }else if(e.keyCode === keyCode2[0] || e.keyCode === keyCode2[1]){
+         btnl2.removeAttribute("class");
+         btnR1.removeAttribute("class");
+         btnR1.setAttribute("class","displayFlex");
+         btnl2.setAttribute("class","displayFlex");
+      }else if(e.keyCode === keyCode0[0] || e.keyCode === keyCode0[1]){
+         btnR2.setAttribute("class","displayFlex");
+         btnL2.setAttribute("class","displayFlex");
+         btnR1.setAttribute("class","displayFlex");
+         btnl2.setAttribute("class","displayFlex");
+      }else{
+         btnR2.setAttribute("class","displayFlex");
+         btnL2.setAttribute("class","displayFlex");
+         btnR1.setAttribute("class","displayFlex");
+         btnl2.setAttribute("class","displayFlex");
+      }
+
+
+});

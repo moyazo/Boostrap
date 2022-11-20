@@ -3,44 +3,56 @@
     src: url(../tipografia/GODOFWAR.TTF);
 }
 
+
+/* COLORES */
+
+:root{
+    --textWhite: white;
+    --ROJO: red;
+    --NEGRO: black;
+    --AZUL: blue;
+    --BORDE-LIGTH:rgba(255, 255, 255, 0.722);
+    --BOXSHADOW: rgb(0, 191, 255);
+    --CARDBACKGROUND: rgba(0, 0, 0, 0.605);
+    --BORDEAMARILLO: rgb(248, 195, 5);
+}
+
+/* BODY - GENERAL */
+
 body{
     width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--NEGRO);
 }
 
-.bgMygrey{
-    background: rgba(109, 109, 109, 0.048);
-    border-radius: 5%;
-}
+/* CARDS HOVER */
 .hover:hover{
-   box-shadow: 0px 0px 5px rgb(0, 191, 255);
+   box-shadow: 0px 0px 5px var(--BOXSHADOW);
    border-radius: 5%;
    transform: scale(1.01);
    transition: .5s ease-in;
+   cursor: pointer;
 }
+.hover1:hover{
+    border-radius: 5%;
+    transform: scale(1.02);
+    transition: .2s ease-in;
+    cursor: pointer;
+ }
 
+
+/* BODY INICIO */
 #inicio{
-    background: black;
+    background: var(--NEGRO);
     overflow: hidden;
-}
-#navbar{
-    background: black;
-}
-
-#card{
-    position: absolute;
-    top: 185vh;
-    background: rgba(0, 0, 0, 0.605);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#img-background{
-    background: black;
-    width: 100vw;
-    height: 100%;
-}
+/* INDEX.HTML */
 
 #titulo{
     display: flex;
@@ -48,24 +60,22 @@ body{
     align-items: center;
 }
 
-#dioses{
-    display: flex;
-    flex-direction: column;
-    height: 0;
+/* PLOT.HTML */
+
+.bgMygrey{
+    background-color: var(--CARDBACKGROUND);
+}
+/* NAVBAR GENERAL */
+
+#navbar{
+    background: var(--NEGRO);
 }
 
-.centrar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
+/* GOD OF WAR FONTS */
 
 .title{
     font-family: gow;
-    -webkit-text-stroke: .3px rgb(248, 195, 5);
+    -webkit-text-stroke: .3px var(--BORDEAMARILLO);
     animation: textShadow 4.5s linear infinite  ;
 }
 
@@ -73,16 +83,35 @@ body{
     font-family: gow;
     font-size: 3.5em;
     /* standard gradient background */
-  background: linear-gradient(rgb(160, 160, 255), rgb(0, 0, 145));
+  background: linear-gradient(rgb(0, 157, 254) 30%, rgb(0, 0, 255) 70%);
 
   /* clip informático */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px rgb(248, 195, 5);
+  /* -webkit-text-stroke: 1px var(--BORDEAMARILLO); */
+}
+
+.title2{
+    font-family: gow;
+    font-size: 3.5em;
+    -webkit-text-stroke: 2px var(--BORDEAMARILLO);
 }
 
 
 
+
+/* GODS.HTML */
+
+
+img{
+    border-radius: 5%;
+}
+#imagen{
+    padding: 5%;
+}
+#grupo2{
+    margin-top: 5%;
+}
 
 a{
     text-decoration: none;
@@ -94,10 +123,110 @@ a{
 .card-text{
     color: white;
 }
-.card-img-top{
-    color: white;
+
+.visible{
+    visibility: visible;
+}
+.notVisible{
+    visibility: hidden;
 }
 
+
+/* WEAPONS.HTML */
+
+#table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    width: 50%;
+    background: linear-gradient(rgba(0, 157, 254, 0.2) 30%, rgba(0, 0, 255, 0.2) 80%);
+    border-radius: 5%;
+
+}
+
+tr,td,th{
+    text-align: center;
+    padding: 2.5%;    
+    font-family: gow;
+    font-size: 1.2em;
+}
+
+caption{
+    padding-bottom: 15%;
+}
+
+
+
+
+.center{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.center1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* RUNICATTACKS.HTML */
+
+.click{
+    color: white;
+    font-size: 1.2em;
+    padding: 5% 0;
+    width: 100%;
+}
+.text-align{
+    text-align: center;
+}
+.textWhite{
+    font-size: 2em;
+}
+.runic{
+    width: 75%;
+    margin: 5% 0;
+}
+.displayNone{
+    display: none;
+}
+.displayFlex{
+    display: flex;
+    font-family: gow;
+    font-size: 3.5em;
+    /* standard gradient background */
+  background: linear-gradient(rgb(0, 157, 254) 30%, rgb(0, 0, 255) 80%);
+
+  /* clip informático */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke: 1px var(--BORDEAMARILLO); */
+
+
+}
+
+
+
+a,p,caption,span,input,button,h4{
+    font-family: "gow";
+}
+
+
+
+
+
+
+
+/* ANIMACIÓN DE CENIZA / ANIMACION INICIO */
 #ash{
 animation: ash 15s linear infinite;
 }
@@ -148,11 +277,26 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: rgb(0, 0, 0);        /* color of the tracking area */
+    background: var(--NEGRO);        /* color of the tracking area */
   }
   
   body::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0);    /* color of the scroll thumb */
     border-radius: 50%;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+    border: 3px solid var(--NEGRO);  /* creates padding around scroll thumb */
+  }
+
+
+  .loader{
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    border-radius: 50%;
+    animation: textShadow 4.5s linear infinite ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    color: white;
+    font-weight: bold;
   }

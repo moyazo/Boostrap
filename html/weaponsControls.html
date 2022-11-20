@@ -12,10 +12,11 @@
     <title>GOW - RAGNAROK</title>
 </head>
 <body class="align-items-center">
+
+    <!-- NAVABAR -->
     <div id="navbar"class="container-fluid">
         
         <nav  class="navbar navbar-expand-lg navbar-dark">
-            <a href="../index.html"><i class="icon-angle-left"></i></a>
               <div class="container">
                 <a class="navbar-brand" href="#">GOD OF WAR</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -25,132 +26,101 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="./prueba.html" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                            <a class="nav-link" href="./prueba.html" aria-current="page">HOME</a><!-- PLOT.HTML LINK -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./gods.html">Gods</a>
+                            <a class="nav-link" href="./gods.html">GODS</a> <!-- GODS.HTML LINK -->
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OPTIONS</a>
+                            <a class="nav-link dropdown-toggle active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OPTIONS</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="./weaponsControls.html">WEAPONS</a>
-                                <a class="dropdown-item" href="#">GOD OF WAR RAGNAROK</a>
+                                <a class="dropdown-item active" href="./weaponsControls.html">WEAPONS <span class="visually-hidden">(current)</span></a>
+                                <a class="dropdown-item" href="./runicsAttacks.html">RUNIC ATTACKS</a> <!-- RUNICATTACKS.HTML LINK -->
                             </div>
                         </li>
                     </ul>
+
+                    <!-- SEARCH FORM -->
+
                     <form class="d-flex my-2 my-lg-0">
                         <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-close-white my-2 my-sm-0" type="submit">Search</button>
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
                         
                     </form>
                 </div>
           </div>
-          <a href="../html/inicio.html"><i class="icon-angle-right"></i></a>
         </nav>
         
     </div>
+
+    <!-- BACKGOUND IMAGE -->
     
     <img src="../img/wallpapersden.com_god-of-war-ragnarok-atreus-and-kratos_1920x1080.jpg" class="img-fluid rounded-top" alt="">
 
-    
-        <div id="carouselId" class="carousel slide w-50 h-50 centrar" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
-                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
-            </ol>
-            <div class="carousel-inner " role="listbox">
-                <div class="carousel-item active ">
-                    <div class="card w-100 bg-dark justify-content-center align-items-center ">
-                
-                        <div class="card-body">
-                            <h4 class="card-title title1">ESPADAS DEL CAOS</h4>
-                        </div>
-                    </div>
-                    <div class="card bg-dark p-5">
-                        <div class="card-body ">
-                            <h4 class="card-title">Las Espadas del Caos son las armas principales de Kratos en God of War, God of War: Chains of Olympus y God of War: Ascension, y las armas secundarias en God of War (2018) y God of War: Ragnarök. Le son dadas por Ares, el dios de la guerra, cuando Kratos se compromete a ser siervo de éste.
+        <!-- WEAPONS TABLE -->
 
-                                ​</h4>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card w-100 bg-dark justify-content-center align-items-center">
-                
-                        <div class="card-body">
-                            <h4 class="card-title title1">HACHA LEVIATÁN</h4>
-                        </div>
-                    </div>
-                    <div class="card bg-dark p-5">
-                        <div class="card-body ">
-                            <h4 class="card-title">Esta hacha es el arma más poderosa de todas las tierras nórdicas, creada por los dos hermanos enanos, Sindri y Brok, para destruir el mismísimo martillo de Thor y poner fin a su sendero de muerte y destrucción. El Hacha Leviatán fue creada para Faye, y esta se la entregó a Kratos al morir.
-
-                                ​</h4>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card w-100 bg-dark justify-content-center align-items-center">
-                
-                        <div class="card-body">
-                            <h4 class="card-title title1">MJÖLNIR</h4>
-                        </div>
-                    </div>
-
-                    <div class="card bg-dark p-5">
-                <div class="card-body ">
-                    <h4 class="card-title">Mjölnir es el arma más temible del arsenal de los dioses y es usado para eliminar a cualquiera que intente socavar la supremacía de los Æsir. Es mencionado como un garrote, un hacha y un martillo. Mjölnir poseía muchas características mágicas, como la de poder golpear tan fuerte como Thor quisiera, desde un leve toque hasta un terrible golpe que destruiría montañas. También se decía que el trueno y el rayo eran consecuencia del golpe del martillo y que el martillo contaba con la capacidad de encogerse lo suficiente como para ser guardado en una túnica y luego agrandarse para ser usado en combate.4​</h4>
+            <div class="table-responsive">
+              <table class="table table-striped-columns
+              table-hover	
+              table-borderless
+              table-primary
+              align-middle">
+                <thead class="table-light">
+                  <caption class="title2 ">WEAPONS</caption>
+                  <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                  </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr class="table-primary" >
+                      <td scope="row">Item</td>
+                      <td>Item</td>
+                      <td>Item</td>
+                    </tr>
+                    <tr class="table-primary">
+                      <td scope="row">Item</td>
+                      <td>Item</td>
+                      <td>Item</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
                     
-                </div>
+                  </tfoot>
+              </table>
             </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <!-- WEAPONS TEXT -->
-
             
 
         <!-- FOOTER -->
 
-        <footer class="bg-dark text-center text-white">
+        <footer class="bg-dark text-center text-white footerWeapons">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
               <!-- Section: Social media -->
               <section class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
                   ><i class="icon-facebook-square"></i
                 ></a>
           
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
                   ><i class="icon-social-twitter"></i
                 ></a>
           
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
                   ><i class="icon-instagrem"></i
                 ></a>
           
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
                   ><i class="icon-linkedin-square"></i
                 ></a>
           
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                <a class="btn btn-outline-info btn-floating m-1" href="#!" role="button"
                   ><i class="icon-social-github"></i
                 ></a>
               </section>
