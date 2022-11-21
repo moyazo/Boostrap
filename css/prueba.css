@@ -141,11 +141,21 @@ a{
     justify-content: center;
     align-items: center;
 }
+
 table{
     width: 50%;
     background: linear-gradient(rgba(0, 157, 254, 0.2) 30%, rgba(0, 0, 255, 0.2) 80%);
-    border-radius: 5%;
 
+}
+
+#table1 tr,td,th{
+    width: 10%;
+    color: var(--textWhite);
+}
+#table1 {
+    width: 75%;
+    border: 1px rgba(255, 255, 255, 0) solid;
+    
 }
 
 tr,td,th{

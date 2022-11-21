@@ -52,15 +52,11 @@ window.addEventListener("keydown", (e) => {
       const keyCode2 =  [50,98];
       const keyCode0 =  [48,96];
 
-      // console.log(e.keyCode);
+      console.log(e.keyCode);
       if(e.keyCode === keyCode1[0] || e.keyCode === keyCode1[1]){
-         btnL2.removeAttribute("class");
-         btnR2.removeAttribute("class");
          btnR2.setAttribute("class","displayFlex");
          btnL2.setAttribute("class","displayFlex");
       }else if(e.keyCode === keyCode2[0] || e.keyCode === keyCode2[1]){
-         btnl2.removeAttribute("class");
-         btnR1.removeAttribute("class");
          btnR1.setAttribute("class","displayFlex");
          btnl2.setAttribute("class","displayFlex");
       }else if(e.keyCode === keyCode0[0] || e.keyCode === keyCode0[1]){
