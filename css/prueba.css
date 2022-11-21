@@ -85,7 +85,7 @@ body{
     /* standard gradient background */
   background: linear-gradient(rgb(0, 157, 254) 30%, rgb(0, 0, 255) 70%);
 
-  /* clip informático */
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* -webkit-text-stroke: 1px var(--BORDEAMARILLO); */
@@ -216,7 +216,6 @@ caption{
     /* standard gradient background */
   background: linear-gradient(rgb(0, 157, 254) 30%, rgb(0, 0, 255) 80%);
 
-  /* clip informático */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* -webkit-text-stroke: 1px var(--BORDEAMARILLO); */

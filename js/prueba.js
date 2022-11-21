@@ -1,41 +1,6 @@
 "use strict"
-
-// GODS SHOW UP
-
-      // let dios1 = document.getElementById("tarjeta1");
-      // let dios2 = document.getElementById("tarjeta2");
-      // let dios3 = document.getElementById("tarjeta3");
-      // let dios4 = document.getElementById("tarjeta4");
-      // let dios5 = document.getElementById("tarjeta5");
-
-      // dios1.setAttribute("class","zero");
-      
-
-      // dios1.addEventListener("click", () => {
-      //    dios1.removeAttribute("class","notVisible");
-
-           
-      //       if(dios1.getAttribute("class")){
-      //          dios1.setAttribute("class","notVisible");
-      //          aux++;
-      //       }else{
-      //          dios1.setAttribute("class","visible");
-      //          aux--;
-      //       }
-      // }) 
-   
-      
-
-
-
-
-
 //  MOSTRAR ATAQUES RÚNICOS 
    
-
-
-
-
 window.addEventListener("keydown", (e) => {
 
    const btnL2 = document.getElementById("L2")
@@ -73,3 +38,5 @@ window.addEventListener("keydown", (e) => {
 
 
 });
+
+
